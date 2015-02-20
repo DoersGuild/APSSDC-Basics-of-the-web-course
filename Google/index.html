@@ -9,10 +9,12 @@
 			<div class="bottom-spacing">
 				<img src="img/logo/google.png" />
 				<br/>
-				<input />
-				<br/>
-				<button>Google Search</button>
-				<button>I'm feeling lucky</button>
+				<form method="get" action="https://www.google.co.in/search">
+					<input type="text" name="q" value="" placeholder="Enter your search term" required="required" />
+					<br/> <!-- https://www.google.co.in/search?q=Hello -->
+					<button type="submit">Google Search</button>
+					<button type="button">I'm feeling lucky</button>
+				</form>
 			</div>
 			<div>
 				Google.co.in is offered in:

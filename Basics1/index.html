@@ -14,5 +14,52 @@
 		<a href="http://google.com">Click here to go to Google.com</a>
 		<a href="about.html" class="red">Click here to go to our About page</a>
 		<a href="mailto:sathvik@doersguild.com">Contact me</a>
+		<br/>
+		<form>
+			<label for="textInput">Hello Text:</label>
+			<input id="textInput" type="text" required="required" />
+			<input type="password" />
+			<input type="email" value="sathvik@doersguild.com" readonly="readonly" />
+			<input type="number" value="20" disabled="disabled" />
+			<textarea>Hello</textarea>
+			<select>
+				<option>Option 1</option>
+				<option selected="selected">Option 2</option>
+			</select>
+			<select multiple="multiple">
+				<option>Option 1</option>
+				<option selected="selected">Option 2</option>
+			</select>
+			<fieldset>
+				<label>
+					<input type="checkbox" name="check" checked="checked" />
+					Check 1
+				</label>
+				<label>
+					<input type="checkbox" name="check" />
+					Check 2
+				</label>
+				<label>
+					<input type="checkbox" name="check" checked="checked" />
+					Check 3
+				</label>
+			</fieldset>
+			<fieldset>
+				<label>
+					<input type="radio" name="radio" />
+					Radio 1
+				</label>
+				<label>
+					<input type="radio" name="radio" checked="checked" />
+					Radio 2
+				</label>
+				<label>
+					<input type="radio" name="radio" />
+					Radio 3
+				</label>
+			</fieldset>
+			<input type="file" />
+			<input type="submit" />
+		</form>
 	</body>
 </html>
