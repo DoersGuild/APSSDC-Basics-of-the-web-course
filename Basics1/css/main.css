@@ -1,0 +1,21 @@
+/*
+This a comment for our information only
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+element {
+	property1: value1;
+	property2: value2;
+}
+*/
+
+body {
+    color: royalblue;
+    background: skyblue;
+}
+a {
+    color: white;
+}
+img {
+    background: white;
+    height: 80px;
+    width: 80px;
+}
