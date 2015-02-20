@@ -10,6 +10,7 @@ element {
 body {
     color: royalblue;
     background: skyblue;
+	font-family:georgian;
 }
 a {
     color: white;
@@ -21,4 +22,21 @@ img {
 }
 .red {
 	color: red;
+}
+.center{
+text-align:center;
+}
+.margin50{
+margin-left:50px;
+}
+.margin75{
+margin-left:100px;
+}
+.white{
+background-color:white;
+color:black;
+}
+.bg-image{
+background-image:url("../img/logo/google.png");
+background-repeat:no-repeat;
 }
