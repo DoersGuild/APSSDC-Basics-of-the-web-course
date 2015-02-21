@@ -107,3 +107,9 @@ ul.list-inline-1 li {
 		n=1 -> 5
 		n=2 -> 7
 */
+
+@media (max-width: 768px) {
+	input {
+		width: 10px;
+	}
+}
