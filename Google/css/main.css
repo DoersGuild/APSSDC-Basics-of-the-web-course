@@ -4,6 +4,7 @@
     text-align: center;
     padding: 10px;
 }
+
 /* Inheritance -> parent's property goes to the child */
 
 img {
@@ -14,6 +15,21 @@ input {
     height: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+	input{
+		width: 200px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	input{
+		width: 350px;
+	}
+}
+@media (max-width: 768px) {
+	img{
+		width: 100px;
+	}
 }
 button {
     padding-top: 5px;
@@ -107,9 +123,3 @@ ul.list-inline-1 li {
 		n=1 -> 5
 		n=2 -> 7
 */
-
-@media (max-width: 768px) {
-	input {
-		width: 10px;
-	}
-}

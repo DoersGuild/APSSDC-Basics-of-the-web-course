@@ -29,7 +29,7 @@ text-align:center;
 .margin50{
 margin-left:50px;
 }
-.margin75{
+.move-right p{
 margin-left:100px;
 }
 .white{
@@ -39,4 +39,17 @@ color:black;
 .bg-image{
 background-image:url("../img/logo/google.png");
 background-repeat:no-repeat;
+}
+.example-id{
+background-color:black;
+color:white;
+}
+.class-name{
+propertyname:value;
+}
+li{
+display:inline;
+}
+table,td{
+border:1px solid black;
 }
