@@ -74,17 +74,20 @@ ul.list-inline-1 li {
 .list-inline li:first-child {
     color: purple;
 }
-.list-inline li: last-child {
+.list-inline li:last-child {
     color: darkgreen;
 }
-.list-inline li: nth-child(2n) {
+.list-inline li:nth-child(2n) {
     text-decoration: underline;
 }
-.list-inline li: nth-child(2n+1) {
+.list-inline li:nth-child(2n+1) {
     background: red;
 }
-.list-inline li: nth-child(1) {
+.list-inline li:nth-child(1) {
     background: yellow;
+}
+.list-inline:only-of-type {
+	font-size: 10px;
 }
 /* 2n=2*n:
 		n=0 -> 0
@@ -98,3 +101,9 @@ ul.list-inline-1 li {
 		n=2 -> 5
 */
 
+
+/* 2n+3=2*n+3:
+		n=0 -> 3
+		n=1 -> 5
+		n=2 -> 7
+*/
