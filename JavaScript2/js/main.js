@@ -40,3 +40,20 @@ if (5 === 6) {
 } else if (6 > 5) {
     console.log('6 is indeed greater than 5');
 }
+var arr = [];
+for (var i = 0; i < 10; i++) {
+    arr.push(i);
+}
+console.log(arr);
+
+function colorChildren(list) {
+    var colors = ['red', 'green', 'blue', 'purple'];
+    console.log('colorChildren', list, colors, list.children);
+    for (var i = list.children.length - 1; i >= 0; i--) {
+        // list.children[i].style.color = colors[i];
+        setColor(list.children[i], colors[list.children.length - 1 - i]);
+        console.log('colorChildren - loop', i, list.children.length - 1 - i, list.children[i].innerHTML, colors[list.children.length - 1 - i]);
+    }
+}
+var list = document.getElementById("myList");
+colorChildren(list);
