@@ -7,5 +7,5 @@ function sumAndShowResult() {
     var b = parseFloat(input2.value);
     sumResult1.value = a + b;
 }
-input1.addEventListener('change', sumAndShowResult);
-input2.addEventListener('change', sumAndShowResult);
+input1.addEventListener('keyup', sumAndShowResult);
+input2.addEventListener('keyup', sumAndShowResult);
