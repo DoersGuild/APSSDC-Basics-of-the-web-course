@@ -1,0 +1,125 @@
+#centralDiv {
+    margin-top: 140px;
+    margin-left: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Inheritance -> parent's property goes to the child */
+
+img {
+    height: 100px;
+}
+input {
+    width: 500px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+	input{
+		width: 200px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	input{
+		width: 350px;
+	}
+}
+@media (max-width: 768px) {
+	img{
+		width: 100px;
+	}
+}
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 10px;
+}
+button:hover {
+    background-color: red;
+}
+button:active {
+    background-color: blue;
+}
+/* 
+  element:pseudo-class {
+	property1: value1;
+  }
+  .class:pseudo-class {
+	property1: value1;
+  }
+  element.class:pseudo-class {
+	property1: value1;
+  }
+*/
+
+input:focus {
+    color: red;
+}
+.bottom-spacing {
+    margin-bottom: 40px;
+}
+li {
+    color: pink;
+}
+.list-inline {
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+}
+#englishListItem {
+    padding: 20px;
+}
+.list-item-english {
+    padding: 200px;
+}
+ul.list-inline-1 li {
+    padding: 10px;
+}
+.list-inline li {
+    display: inline;
+    padding: 5px;
+}
+/* The style that comes last gets more priority than the one that comes first */
+
+/* More specific selectors get more priority */
+
+.list-inline li:first-child {
+    color: purple;
+}
+.list-inline li:last-child {
+    color: darkgreen;
+}
+.list-inline li:nth-child(2n) {
+    text-decoration: underline;
+}
+.list-inline li:nth-child(2n+1) {
+    background: red;
+}
+.list-inline li:nth-child(1) {
+    background: yellow;
+}
+.list-inline:only-of-type {
+	font-size: 10px;
+}
+/* 2n=2*n:
+		n=0 -> 0
+		n=1 -> 2
+		n=2 -> 4
+*/
+
+/* 2n+1=2*n+1:
+		n=0 -> 1
+		n=1 -> 3
+		n=2 -> 5
+*/
+
+
+/* 2n+3=2*n+3:
+		n=0 -> 3
+		n=1 -> 5
+		n=2 -> 7
+*/

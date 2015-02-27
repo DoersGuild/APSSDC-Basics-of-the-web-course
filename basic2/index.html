@@ -1,0 +1,68 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>JS Basics</title>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<h1>Conditions </h1>
+		<ul>
+			<li>If</li>
+			<li>if else</li>
+			<li>swith </li>
+		</ul>
+		
+		<h2> Comparion operators </h2>
+		<ul>
+			<li>==</li>
+			<li>===</li>
+			<li>!=</li>
+			<li>!==</li>
+			<li>></li>
+			<li><</li>
+			<li>>=</li>
+			<li><=</li>
+		</ul>
+		<h3>If </h3>
+		
+		<p>Display "Good day!" if the hour is less than 18:00:</p>
+
+		<p id="demo1"></p>
+		<p id="demo2"></p>
+		<script>
+			console.log(new Date().getHours());
+			if (new Date().getHours() < 18) {
+				document.getElementById("demo1").innerHTML = "Good day!";
+			}
+			else{
+			document.getElementById("demo1").innerHTML = "Good Evening!"; 
+			}
+			var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+        break;
+}
+document.getElementById("demo2").innerHTML = "Today is " + day;
+		</script>
+		
+	</body>
+</html>
