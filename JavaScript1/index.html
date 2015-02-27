@@ -1,9 +1,19 @@
 <!doctype html>
 <html>
 	<head>
-		<script type="text/javascript" src="js/main.js"></script>
 	</head>
-	<body>
+	<body id="main">
 		Hello JavaScript
+		<script type="text/javascript">
+			alert('Hello');
+			console.log('before p document.getElementById("myParagraph") = ', document.getElementById("myParagraph"));
+		</script>
+		<p id="myParagraph">MyParagraph before change</p>
+		<script type="text/javascript">
+			alert('Block');
+			console.log('after p document.getElementById("myParagraph") = ', document.getElementById("myParagraph"));
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
+<!-- Document Object Model - DOM -->
